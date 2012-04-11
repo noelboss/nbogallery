@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'nbogallery'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_nbogallery_domain_model_gallery">Gallery</label>
+			<label index="tx_nbogallery_domain_model_gallery.title">Titel</label>
+			<label index="tx_nbogallery_domain_model_gallery.description">Beschreibung</label>
+			<label index="tx_nbogallery_domain_model_gallery.folder">Ordner</label>
+			<label index="tx_nbogallery_domain_model_gallery.sortby">Sortieren nach</label>
+			<label index="tx_nbogallery_domain_model_gallery.filename">Dateiname</label>
+			<label index="tx_nbogallery_domain_model_gallery.filename">Dateiname</label>
+			<label index="tx_nbogallery_domain_model_gallery.filesize">Dateigrösse</label>
+			<label index="tx_nbogallery_domain_model_gallery.modified">Änderungsdatum</label>
+			<label index="tx_nbogallery_domain_model_gallery.created">Erstelldatum</label>
+			<label index="tx_nbogallery_domain_model_gallery.size">Dimensionen</label>
+			<label index="tx_nbogallery_domain_model_gallery.sortdirection">Richtung</label>
+			<label index="tx_nbogallery_domain_model_gallery.asc">Aufsteigend (a-z oder 1-9)</label>
+			<label index="tx_nbogallery_domain_model_gallery.desc">Absteigend (z-a oder 9-1)</label>
+		</languageKey>
+	</data>
+</T3locallang>

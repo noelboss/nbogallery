@@ -1,0 +1,30 @@
+plugin.tx_nbogallery {
+	view {
+		templateRootPath = {$plugin.tx_nbogallery.view.templateRootPath}
+		partialRootPath = {$plugin.tx_nbogallery.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_nbogallery.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_nbogallery.persistence.storagePid}
+	}
+}
+
+plugin.tx_nbogallery._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-nbogallery table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-nbogallery table th {
+		font-weight:bold;
+	}
+
+	.tx-nbogallery table td {
+		vertical-align:top;
+	}
+)

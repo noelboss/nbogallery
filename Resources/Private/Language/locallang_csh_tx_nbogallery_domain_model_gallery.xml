@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Context Sensitive Help (CSH) for table tx_nbogallery_domain_model_gallery</description>
+		<type>CSH</type>
+		<csh_table>tx_nbogallery_domain_model_gallery</csh_table>
+	</meta>
+	<data type="array">
+	<languageKey index="default" type="array">
+			<label index="title.description">Title</label>
+			<label index="description.description">Description</label>
+			<label index="folder.description">Folder</label>
+		</languageKey>
+	</data>
+</T3locallang>
