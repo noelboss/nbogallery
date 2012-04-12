@@ -1,12 +1,10 @@
 {namespace fed=Tx_Fed_ViewHelpers}
 <f:layout name="Default" />
-
 <f:section name="main">
 	<ul class="thumbnails gallery">
 		<f:for each="{galleries}" as="gallery" key="key">
 			<li class="span6">
 				<f:link.action action="show" arguments="{gallery : gallery}" class="span2 thumbnail">
-				{gallery.sortby} {gallery.sortdirection}
 					<fed:image src="{gallery.folder}/*." divider="" sortBy="filename" sortDirection="DESC" width="170c" height="170c" limit="1" />
 				</f:link.action>
 				<div class="offset2">

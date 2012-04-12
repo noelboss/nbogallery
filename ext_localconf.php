@@ -7,13 +7,10 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	$_EXTKEY,
 	'Gallery',
 	array(
-		'Gallery' => 'list, show, new, create, edit, update, delete',
-		
+		'Gallery' => 'list, show',
 	),
-	// non-cacheable actions
 	array(
-		'Gallery' => 'create, update, delete',
-		
+		'Gallery' => '',
 	)
 );
 

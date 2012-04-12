@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Gallery',
-	'description' => 'Simple Gallery',
+	'description' => 'This extension provides a simple gallery, rendering all images in a folder in a grid with lightbox effects.',
 	'category' => 'plugin',
 	'author' => 'Noel Bossart',
 	'author_email' => 'n.company@me.com',
@@ -27,11 +27,12 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '',
+	'version' => '0.1.0',
 	'constraints' => array(
 		'depends' => array(
 			'extbase' => '1.3.0',
 			'fluid' => '1.3.0',
+			'fed' => '',
 		),
 		'conflicts' => array(
 		),

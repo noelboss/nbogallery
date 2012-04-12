@@ -1,0 +1,16 @@
+.tx-nbogallery  .section {
+	margin-bottom: 1em;
+}
+
+.tx-nbogallery  a.noColor{
+	color: inherit;
+}
+
+.tx-nbogallery .noColor:hover{
+	color: #444;
+	text-decoration: none;
+}
+
+.tx-nbogallery .gallery li {
+	height:200px;
+}
