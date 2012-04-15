@@ -1,3 +1,4 @@
+
 .tx-nbogallery  .section {
 	margin-bottom: 1em;
 }
@@ -11,6 +12,11 @@
 	text-decoration: none;
 }
 
-.tx-nbogallery .gallery li {
-	height:200px;
+.tx-nbogallery .thumbnail{
+	width: 140px;
+	float:left;
+}
+
+.tx-nbogallery .row{
+	margin-bottom: 20px;
 }

@@ -1,11 +1,11 @@
 {namespace fed=Tx_Fed_ViewHelpers}
 <f:layout name="Default" />
 <f:section name="main">
-	<ul class="thumbnails gallery">
+	<div class="row">
 		<f:for each="{galleries}" as="gallery" key="key">
-			<li class="span6">
-				<f:link.action action="show" arguments="{gallery : gallery}" class="span2 thumbnail">
-					<fed:image src="{gallery.folder}/*." divider="" sortBy="filename" sortDirection="DESC" width="170c" height="170c" limit="1" />
+			<div class="span6">
+				<f:link.action action="show" arguments="{gallery : gallery}" class="thumbnail">
+					<fed:image src="{gallery.folder}/*." divider="" sortBy="filename" sortDirection="DESC" width="140c" height="140c" limit="1" />
 				</f:link.action>
 				<div class="offset2">
 					<h2>
@@ -14,7 +14,7 @@
 						</f:link.action>
 					</h2>
 					<f:link.action action="show" arguments="{gallery : gallery}" class="noColor">
-						<f:format.raw><f:format.crop maxCharacters="220" append="&nbsp;...">{gallery.description}</f:format.crop></f:format.raw>
+						<f:format.raw><f:format.crop maxCharacters="170" append="&nbsp;...">{gallery.description}</f:format.crop></f:format.raw>
 					</f:link.action>
 					<p class="btn-group">
 						<f:link.action action="show" arguments="{gallery : gallery}"  class="btn btn">
@@ -22,7 +22,11 @@
 						</f:link.action>
 					</p>
 				</div>
-			</li>
+			</div>
+			<f:if condition="{key} % 2">
+				</div><!-- start new row -->
+				<div class="row">
+			</f:if>
 		</f:for>
-	</ul>
+	</div>
 </f:section>

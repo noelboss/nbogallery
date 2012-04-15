@@ -6,16 +6,14 @@
 <h1>
 	{gallery.title}
 </h1>
-<f:format.html>
-	{gallery.description}
-</f:format.html>
+<f:format.html>{gallery.description}</f:format.html>
 <fed:resource.image path="{gallery.folder}"
   as="images" sortBy="{gallery.sortby}" sortDirection="{gallery.sortdirection}" limit="150" />
 <ul class="thumbnails section">
 	<f:for each="{images}" as="image" key="iter">
 			<li class="span2">
 				<a href="{image}" class="thumbnail fancybox-thumbs" data-fancybox-group="{gallery.uid}">
-					<img src="<f:uri.image src='{image}' width='170c' height='170c' />"/>
+					<img src="<f:uri.image src='{image}' width='140c' height='140c' />"/>
 				</a>
 			</li>
 	</f:for>
