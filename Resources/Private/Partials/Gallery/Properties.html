@@ -12,7 +12,7 @@
 <ul class="thumbnails section">
 	<f:for each="{images}" as="image" key="iter">
 			<li class="span2">
-				<a href="{image}" class="thumbnail fancybox-thumbs" data-fancybox-group="{gallery.uid}">
+				<a href="<f:uri.image src='{image}' height='900m' />" class="thumbnail fancybox-thumbs" data-fancybox-group="{gallery.uid}">
 					<img src="<f:uri.image src='{image}' width='140c' height='140c' />"/>
 				</a>
 			</li>
