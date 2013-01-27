@@ -19,7 +19,7 @@
 			
 			maxHeight: $b.height()-150,
 
-			closeBtn  : false,
+			closeBtn  : true,
 			arrows    : true,
 			nextClick : true,
 			
