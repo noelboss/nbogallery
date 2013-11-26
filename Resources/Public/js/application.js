@@ -16,7 +16,7 @@
 
 			topRatio: 0.9,
 
-			maxHeight: $('html').height()-150,
+			maxHeight: $('html').height()-200,
 
 			closeBtn  : false,
 			arrows    : true,
