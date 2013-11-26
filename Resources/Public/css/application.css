@@ -1,4 +1,6 @@
-
+html {
+	min-height: 100%;
+}
 .tx-nbogallery  .section {
 	margin-bottom: 1em;
 }
