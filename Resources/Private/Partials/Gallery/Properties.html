@@ -1,8 +1,11 @@
 {namespace fed=Tx_Fed_ViewHelpers}
 
-<f:link.action action="list"  class="btn pull-right">
-	<i class="icon-arrow-left"></i> Zurück zur Übersicht
-</f:link.action>
+<f:if condition="{galleryCount} > 1">
+	<f:link.action action="list"  class="btn pull-right">
+		<i class="icon-arrow-left"></i> Zurück zur Übersicht
+	</f:link.action>
+</f:if>
+
 <h1>
 	{gallery.title}
 </h1>
@@ -18,6 +21,10 @@
 			</li>
 	</f:for>
 </ul>
-<f:link.action action="list"  class="btn">
-	<i class="icon-arrow-left"></i> Zurück zur Übersicht
-</f:link.action>
+<f:if condition="{galleryCount} > 1">
+	<f:if condition="{f:count(subject:'{images}')} > 20">
+		<f:link.action action="list"  class="btn">
+			<i class="icon-arrow-left"></i> Zurück zur Übersicht
+		</f:link.action>
+	</f:if>
+</f:if>

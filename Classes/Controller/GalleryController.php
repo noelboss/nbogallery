@@ -57,6 +57,7 @@ class Tx_Nbogallery_Controller_GalleryController extends Tx_Extbase_MVC_Controll
 	 */
 	public function listAction() {
 		$galleries = $this->galleryRepository->findAll();
+		$this->view->assign('galleryCount', $this->galleryRepository->countAll());
 		$this->view->assign('galleries', $galleries);
 	}
 
@@ -67,6 +68,7 @@ class Tx_Nbogallery_Controller_GalleryController extends Tx_Extbase_MVC_Controll
 	 * @return void
 	 */
 	public function showAction(Tx_Nbogallery_Domain_Model_Gallery $gallery) {
+		$this->view->assign('galleryCount', $this->galleryRepository->countAll());
 		$this->view->assign('gallery', $gallery);
 	}
 
@@ -76,7 +78,7 @@ class Tx_Nbogallery_Controller_GalleryController extends Tx_Extbase_MVC_Controll
 	 * @param $newGallery
 	 * @dontvalidate $newGallery
 	 * @return void
-	 */
+	 *
 	public function newAction(Tx_Nbogallery_Domain_Model_Gallery $newGallery = NULL) {
 		$this->view->assign('newGallery', $newGallery);
 	}
@@ -86,7 +88,7 @@ class Tx_Nbogallery_Controller_GalleryController extends Tx_Extbase_MVC_Controll
 	 *
 	 * @param $newGallery
 	 * @return void
-	 */
+	 *
 	public function createAction(Tx_Nbogallery_Domain_Model_Gallery $newGallery) {
 		$this->galleryRepository->add($newGallery);
 		$this->flashMessageContainer->add('Your new Gallery was created.');
@@ -98,7 +100,7 @@ class Tx_Nbogallery_Controller_GalleryController extends Tx_Extbase_MVC_Controll
 	 *
 	 * @param $gallery
 	 * @return void
-	 */
+	 *
 	public function editAction(Tx_Nbogallery_Domain_Model_Gallery $gallery) {
 		$this->view->assign('gallery', $gallery);
 	}
@@ -108,7 +110,7 @@ class Tx_Nbogallery_Controller_GalleryController extends Tx_Extbase_MVC_Controll
 	 *
 	 * @param $gallery
 	 * @return void
-	 */
+	 *
 	public function updateAction(Tx_Nbogallery_Domain_Model_Gallery $gallery) {
 		$this->galleryRepository->update($gallery);
 		$this->flashMessageContainer->add('Your Gallery was updated.');
@@ -120,12 +122,12 @@ class Tx_Nbogallery_Controller_GalleryController extends Tx_Extbase_MVC_Controll
 	 *
 	 * @param $gallery
 	 * @return void
-	 */
+	 *
 	public function deleteAction(Tx_Nbogallery_Domain_Model_Gallery $gallery) {
 		$this->galleryRepository->remove($gallery);
 		$this->flashMessageContainer->add('Your Gallery was removed.');
 		$this->redirect('list');
 	}
-
+	/***/
 }
 ?>
