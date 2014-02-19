@@ -1,4 +1,4 @@
-{namespace fed=Tx_Fed_ViewHelpers}
+{namespace nbog=Tx_Nbogallery_ViewHelpers}
 
 <f:if condition="{galleryCount} > 1">
 	<f:link.action action="list"  class="btn pull-right">
@@ -10,7 +10,7 @@
 	{gallery.title}
 </h1>
 <f:format.html>{gallery.description}</f:format.html>
-<fed:resource.image path="{gallery.folder}"
+<nbog:resource.image path="{gallery.folder}"
   as="images" sortBy="{gallery.sortby}" sortDirection="{gallery.sortdirection}" limit="150" />
 <ul class="thumbnails section">
 	<f:for each="{images}" as="image" key="iter">
