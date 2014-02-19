@@ -3,7 +3,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012 Noel Bossart <n.company@me.com>, sagenja.ch
+ *  (c) 2012 Noel Bossart <n.company@me.com>, noelboss.ch
  *  
  *  All rights reserved
  *
