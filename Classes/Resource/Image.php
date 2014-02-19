@@ -25,13 +25,13 @@
 
 /**
  * Resource: File - abstraction over a File in order to get sizes, paths, extension
- * etc from a file. Used by Tx_Fed_Persistence_FileObjectStorage to allow OO for'
+ * etc from a file. Used by Tx_Nbogallery_Persistence_FileObjectStorage to allow OO for'
  * files 100% compatible with the way TYPO3 treats files, upload folders and all.
  *
  * @author Claus Due, Wildside A/S
- * @package Fed
+ * @package Nbogallery
  * @subpackage Resource
  */
-class Tx_Fed_Resource_Image extends Tx_Fed_Resource_File {
+class Tx_Nbogallery_Resource_Image extends Tx_Nbogallery_Resource_File {
 
 }
