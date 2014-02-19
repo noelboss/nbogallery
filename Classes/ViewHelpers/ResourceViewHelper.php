@@ -162,7 +162,7 @@ class Tx_Nbogallery_ViewHelpers_ResourceViewHelper extends Tx_Fluid_Core_ViewHel
 				$file = PATH_site . $file;
 			}
 			if (file_exists($file) === TRUE) {
-				$fileObject = $this->objectManager->get('Tx_Nbogallery_Resource_File', $file);
+				$fileObject = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('Tx_Nbogallery_Resource_File', $file);
 				$objects[$k] = $fileObject;
 			}
 		}
